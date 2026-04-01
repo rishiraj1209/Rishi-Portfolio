@@ -35,7 +35,7 @@ const Navbar = () => {
         duration:0.3,
         ease:'linear'
       }}
-       className='fixed inset-x-0 top-0 max-w-4xl mx-auto flex items-center justify-between rounded-full px-3 py-2 bg-white dark:bg-neutral-800'>
+       className='fixed z-50 inset-x-0 top-0 max-w-4xl mx-auto flex items-center justify-between rounded-full px-3 py-2 bg-white dark:bg-neutral-800'>
         <Image className='h-10 w-10 rounded-full object-cover object-top' src='/RISHI_Photo.jpg' width={100} height={100} alt="rishi image"/>
         <div className='flex items-center'>
             {navItems.map((item,idx)=>(
