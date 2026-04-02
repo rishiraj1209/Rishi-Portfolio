@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import {Outfit} from "next/font/google";
 import "./globals.css";
 import Navbar from "../components/navbar";
+import { ThemeProvider } from "next-themes";
 
 const outfit = Outfit({
   subsets:['latin'],
@@ -23,9 +24,12 @@ export default function RootLayout({
       lang="en"
       className={`${outfit.className} h-full antialiased`}
     >
-      <body className="min-h-full flex flex-col bg-neutral-100 dark:bg-neutral-700">
-        <Navbar/>
-        {children}
+      <body className="min-h-full flex flex-col bg-neutral-100 dark:bg-neutral-950">
+        <ThemeProvider attribute="class" defaultTheme="system" enableSystem>
+          <Navbar/>
+          {children}
+        </ThemeProvider>
+        
       </body>
     </html>
   );

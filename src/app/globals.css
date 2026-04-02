@@ -3,10 +3,11 @@
 
 @custom-variant dark (&:is(.dark *));
 
-@theme inline {
-  --shadow-aceternity: 0px 2px 3px -1px rgba(0,0,0,0.1), 0px 1px 0px 0px rgba(25,28,33,0.02), 0px 0px 0px 1px rgba(25,28,33,0.08);
+@theme inline{
   --color-primary: var(--color-neutral-800);
   --color-secondary:var(--color-neutral-500);
+  --shadow-aceternity: 0px 2px 3px -1px rgba(0,0,0,0.1), 0px 1px 0px 0px rgba(25,28,33,0.02), 0px 0px 0px 1px rgba(25,28,33,0.08);
+  --shadow-aceternity-dark: 0px 2px 6px -1px rgba(0,0,0,0.6),0px 1px 0px 0px rgba(255,255,255,0.04),0px 0px 0px 1px rgba(255,255,255,0.06);
 }
 
 .dark{
