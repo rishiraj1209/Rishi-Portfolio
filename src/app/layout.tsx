@@ -3,6 +3,7 @@ import {Outfit} from "next/font/google";
 import "./globals.css";
 import Navbar from "../components/navbar";
 import { ThemeProvider } from "next-themes";
+import Motivation from "../components/Motivation";
 
 const outfit = Outfit({
   subsets:['latin'],
@@ -23,13 +24,14 @@ export default function RootLayout({
     <html
       lang="en"
       className={`${outfit.className} h-full antialiased`}
+      suppressHydrationWarning
     >
-      <body className="min-h-full flex flex-col bg-neutral-100 dark:bg-neutral-950">
+      <body className="min-h-full flex flex-col bg-neutral-100 dark:bg-neutral-950 ">
         <ThemeProvider attribute="class" defaultTheme="system" enableSystem>
           <Navbar/>
           {children}
+          <Motivation/>
         </ThemeProvider>
-        
       </body>
     </html>
   );

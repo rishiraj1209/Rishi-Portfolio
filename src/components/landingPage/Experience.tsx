@@ -1,24 +1,8 @@
 'use client'
 import React from 'react'
 import { motion } from 'motion/react'
-
+import experiences from '../../data/experiences'
 const Experience = () => {
-    const experiences = [
-        {
-            company:"Uptoskills",
-            position:"ReactJS Intern",
-            startDate:"March 2026",
-            endDate:"present",
-            location:"Bengaluru, India (remote)"
-        },
-        {
-            company:"HCL (Guvi)",
-            position:"Full Stack Developement Intern",
-            startDate:"June 2025",
-            endDate:"September 2025",
-            location:"Chennai, India (remote)"
-        }
-    ]
   return (
     <div className='my-10'>
       <h1 className='text-2xl font-semibold mb-4'>Experience</h1>

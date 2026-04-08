@@ -5,11 +5,13 @@ import Image from 'next/image'
 import Link from 'next/link'
 import {motion, useMotionValueEvent, useScroll} from 'motion/react'
 import Themetoggle from '../Themetoggle'
+import { useTheme } from 'next-themes'
 
 
 const Navbar = () => {
+  const {theme} = useTheme();
     const navItems = [
-        {title:'Home',href:'/home'},
+        {title:'Home',href:'/'},
         {title:'Projects',href:'/projects'},
         {title:'Contact',href:'/contact'},
         {title:'Experience',href:'/experience'}
@@ -29,7 +31,7 @@ const Navbar = () => {
     <Container>
       <motion.nav
       animate={{
-        boxShadow: scrolled ? 'var(--shadow-aceternity)':'none',
+        boxShadow: scrolled ? `${theme === 'dark' ?'var(--shadow-aceternity-dark)' :'var(--shadow-aceternity)'}`:'none',
         width: scrolled? '50%':'100%',
         y: scrolled?10:0,
       }}
@@ -37,7 +39,7 @@ const Navbar = () => {
         duration:0.3,
         ease:'linear'
       }}
-       className='fixed z-50 inset-x-0 top-0 max-w-4xl mx-auto flex items-center justify-between rounded-full px-3 py-2 bg-white dark:bg-neutral-900'>
+       className={`fixed z-50 inset-x-0 top-0 max-w-4xl mx-auto flex items-center justify-between px-3 py-2 bg-white dark:bg-neutral-900 ${scrolled? 'rounded-full':''}`}>
         <Image className='h-10 w-10 rounded-full object-cover object-top' src='/RISHI_Photo.jpg' width={100} height={100} alt="rishi image"/>
         <div className='flex items-center gap-2'>
             {navItems.map((item,idx)=>(
