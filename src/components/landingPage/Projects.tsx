@@ -27,7 +27,7 @@ const Projects = () => {
             }}
             className='group relative mb-4' key={project.title}>
                 <Link href={project.href}>
-                    <Image className='object-cover w-90 h-60 rounded-xl border border-slate-200 dark:border-slate-500 group-hover:scale-102 transition-all duration-200' src={project.image} alt={project.title} height={300} width={300} loading='eager' />
+                    <Image className='object-cover w-full h-60 rounded-xl border border-slate-200 dark:border-slate-500 group-hover:scale-102 transition-all duration-200' src={project.image} alt={project.title} height={300} width={300} loading='eager' />
                 </Link>
                 <h1 className='text-primary dark:text-neutral-100 mb-2 font-semibold text-lg'>{project.title}</h1>
                 <p className='text-secondary dark:text-neutral-400 max-w-80'>{project.description}</p>

@@ -26,7 +26,7 @@ export default function RootLayout({
       className={`${outfit.className} h-full antialiased`}
       suppressHydrationWarning
     >
-      <body className="min-h-full flex flex-col bg-neutral-100 dark:bg-neutral-950 ">
+      <body className="w-full min-h-full flex flex-col bg-neutral-100 dark:bg-neutral-950 ">
         <ThemeProvider attribute="class" defaultTheme="system" enableSystem>
           <Navbar/>
           {children}

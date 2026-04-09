@@ -23,12 +23,12 @@ const Experience = () => {
       }}
        className='space-y-4 text-center'>
         {experiences.map((exp,idx)=>(
-            <div key={idx} className='flex justify-between items-center'>
-                <div className='flex flex-col items-start'>
-                    <span className='text-primary dark:text-neutral-100 font-semibold text-lg'>{exp.company}</span>
+            <div key={idx} className='flex flex-col gap-2 md:flex-row md:justify-between md:items-center border-neutral-200 dark:border-neutral-700 text-[12px] md:text-base max-w-full'>
+                <div className='flex min-w-0 flex-col items-start'>
+                    <span className='text-primary dark:text-neutral-100 font-semibold text-lg wrap-break-word'>{exp.company} {exp.isCurrent && <span className='text-[10px] md:text-[12px] ml-2 bg-green-100 border border-green-500 px-2 py-1  font-light rounded-md text-neutral-700 dark:text-neutral-100 dark:bg-green-950 dark:border-green-700'>Working</span>}</span>
                     <span className='text-secondary dark:text-neutral-400'>{exp.position}</span>
                 </div>
-                <div className='flex flex-col items-end'>
+                <div className='flex min-w-0 flex-col items-end'>
                     <span className='text-secondary dark:text-neutral-400'>{exp.startDate} - {exp.endDate}</span>
                     <span className='text-secondary dark:text-neutral-400'>{exp.location}</span>
                 </div>

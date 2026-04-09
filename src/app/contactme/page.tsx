@@ -43,7 +43,7 @@ const page = () => {
         }
     }
   return (
-    <Container className='min-h-screen pt-30 px-10'>
+    <Container className='min-h-screen py-20 md:py-30 px-4 md:px-10'>
         <h1 className='text-4xl font-semibold text-primary dark:text-neutral-100 mb-2 text-shadow-md dark:text-shadow-neutral-700'>Contact Me</h1>
         <p className='font-medium text-secondary mb-4'>Have a project in mind or just want to say hi? I'd love to hear from you.</p>
 

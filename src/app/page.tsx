@@ -23,8 +23,8 @@ export default function Home() {
       duration:0.3,
       ease:"easeInOut"
     }}
-     className="min-h-screen flex items-start justify-start ">
-      <Container className="min-h-[200vh] px-4 py-20">
+     className="min-h-screen flex items-start justify-start">
+      <Container className="min-h-[200vh] py-20 md:py-30 px-4 md:px-10">
           <Hero/>
           <Experience/>
           <Projects/>
