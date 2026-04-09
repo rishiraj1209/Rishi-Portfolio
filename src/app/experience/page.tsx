@@ -7,8 +7,8 @@ import { motion } from 'motion/react'
 
 const page = () => {
   return (
-    <div className='min-h-screen flex items-start justify-start'>
-        <Container className='py-20 min-h-screen px-4'>
+    <Container className='py-30 px-10 min-h-screen flex items-start justify-start '>
+    <div className='min-h-screen'>
             <div className='mb-10'>
               <h1 className='text-3xl font-semibold text-primary dark:text-neutral-100 mb-2'>Experience</h1>
               <p className='font-medium text-secondary dark:text-neutral-400 text-sm md:text-base'>My work experiences across different companies and roles.</p>
@@ -68,8 +68,8 @@ const page = () => {
                     </div>
                 ))}
             </motion.div>
-        </Container>
     </div>
+    </Container>
   )
 }
 

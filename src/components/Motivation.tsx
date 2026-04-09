@@ -112,7 +112,7 @@ const Motivation = () => {
         setIdx(Math.floor((Math.random())*20));
     },[])   
   return (
-    <Container className='pb-10 px-4'>
+    <Container className='pb-10 px-10'>
         <motion.div 
         initial ={{
             opacity:0,

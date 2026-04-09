@@ -10,8 +10,8 @@ import Skill from '@/src/components/Skill'
 
 const page = () => {
   return (
-    <div className='min-h-screen flex items-start justify-start'>
-        <Container className='py-20 px-4 min-h-[200vh]'>
+    <Container className='py-30 px-10 min-h-screen flex items-start justify-start '>
+    <div className='min-h-screen'>
             <div className='mb-10'>
               <h1 className='text-3xl font-semibold text-primary dark:text-neutral-100 mb-2'>Projects</h1>
               <p className='font-medium text-secondary dark:text-neutral-400 text-sm md:text-base'>A few products and experiments I have shipped</p>
@@ -47,8 +47,8 @@ const page = () => {
                   </motion.div>
               ))}
             </div>
-        </Container>
     </div>
+    </Container>
   )
 }
 
