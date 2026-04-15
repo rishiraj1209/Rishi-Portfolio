@@ -35,7 +35,7 @@ const Hero = () => {
             ease:'easeInOut'
           }}
            className='flex items-center py-2 px-4 rounded-full shadow-aceternity dark:shadow-aceternity-dark border border-neutral-200 dark:border-neutral-700 cursor-pointer'>
-            <Link href="https://drive.google.com/file/d/16ELih8UsO4C9EDCN6yYZ8hN6zN_Ce0sY/view?usp=sharing" target='_blank'>
+            <Link href="https://drive.google.com/file/d/1UxOxZrcCaxEVWUA59doe1k7Gajj0jGqj/view?usp=sharing" target='_blank'>
               Get Resume
             </Link>
           </motion.div>
